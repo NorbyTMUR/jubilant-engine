@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<header>
+    <!--script src="script.js"></script-->
+    <link rel="stylesheet" href="button.css">
+</header>
+<body>
+    <h1>IT in India</h1>
+    <h4><em>Invaluable or Insidious?</em></h4>
+    <button id="toggle-text">
+        <img src="An_Indian_call_center.jpg">
+        <p id="hidden-text">Image of an Indian Call Center
+            <br> Source Credit: Sonamsaxena, Wikipedia
+        </p>
+    </button>
+    <p2>
+        Hello
+    </p2>
+</body>
+
+<script >
+    var toggleText = document.getElementById("toggle-text");
+    var hiddenText = document.getElementById("hidden-text");
+    toggleText.addEventListener("click", function(){
+        if (hiddenText.style.display === "none") {
+            hiddenText.style.display="block"
+        } else {
+            hiddenText.style.display = "none"
+        }
+    });
+</script>
